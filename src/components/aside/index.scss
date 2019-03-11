@@ -1,0 +1,13 @@
+.mod-aside{
+    position: relative;
+    min-height: 600px;
+    background: #545c64;
+    .nav-arrow{
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        cursor: pointer;
+        // color: #fff;
+        margin-top: -8px;
+    }  
+}
