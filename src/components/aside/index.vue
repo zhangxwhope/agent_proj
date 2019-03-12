@@ -2,8 +2,7 @@
     <div class="mod-aside">
         <el-menu 
             :default-active="activeNav" 
-            :collapse="isCollapse"
-            class="el-menu-demo" 
+            class="aside-menu" 
             mode="vertical" 
             height="100%"
             background-color="#545c64"
@@ -17,7 +16,6 @@
                 </template>
             </el-menu-item>
         </el-menu>
-        <i class="nav-arrow el-icon-d-arrow-left" @click="collapseNav"></i>
     </div>
 </template>
 
@@ -26,13 +24,7 @@ export default {
     data() {
         return {
             activeNav: 'user',
-            isCollapse: false,
         };
-    },
-    methods: {
-        collapseNav() {
-            this.isCollapse = !this.isCollapse;
-        },
     },
 }
 </script>

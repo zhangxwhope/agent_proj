@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <el-container>
+    <el-container class="container-wrap">
       <el-header>
         <Header></Header>
       </el-header>
@@ -9,7 +9,7 @@
           <Aside></Aside>
         </el-aside>
         <el-main>
-          <router-view/>
+          <router-view class="router-view"/>
         </el-main>
       </el-container>
     </el-container>
@@ -31,11 +31,16 @@ export default class App extends Vue {}
 </script>
 
 <style lang="scss">
+@import '@/assets/scss/app.scss';
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  height: 100%;
+  .container-wrap{
+    height: 100%;
+  }
 }
 </style>
